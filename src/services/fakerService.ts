@@ -1,4 +1,8 @@
-import { faker } from '@faker-js/faker/locale/en_IN';
+import { faker } from '@faker-js/faker';
+
+// Set locale to Indian English for more relevant data
+faker.setLocale('en_IN');
+
 import type { Customer, KYCDetails, EmploymentDetails, IncomeDetails, CreditCardApplication } from '../types';
 import { generateCustomerId, generateApplicationId } from '../utils/helpers';
 
