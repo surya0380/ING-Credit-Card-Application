@@ -1,0 +1,202 @@
+.confirmation-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.confirmation-content {
+  padding: 24px;
+}
+
+.confirmation-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.confirmation-card {
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.confirmation-card .ant-card-body {
+  padding: 48px 32px;
+}
+
+.success-section {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.success-check {
+  font-size: 80px;
+  color: #52c41a;
+  display: block;
+  margin-bottom: 16px;
+  animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-section h2 {
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.success-section p {
+  font-size: 16px;
+  color: #666;
+}
+
+.details-section {
+  margin: 24px 0;
+}
+
+.details-section h3 {
+  color: #1890ff;
+  margin-bottom: 16px;
+}
+
+.credit-limit-section {
+  margin: 24px 0;
+}
+
+.credit-limit-section h3 {
+  color: #1890ff;
+  margin-bottom: 16px;
+}
+
+.limit-box {
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #e8e8e8;
+}
+
+.limit-box.max-limit {
+  background: #f0f5ff;
+  border-color: #b3d8ff;
+}
+
+.limit-box.recommended-limit {
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+.limit-amount {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1890ff;
+  margin-top: 8px;
+}
+
+.limit-box.recommended-limit .limit-amount {
+  color: #52c41a;
+}
+
+.next-steps-section {
+  margin: 24px 0;
+}
+
+.next-steps-section h3 {
+  color: #1890ff;
+  margin-bottom: 16px;
+}
+
+.steps-list {
+  padding-left: 20px;
+}
+
+.steps-list li {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.notes-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.notes-list li {
+  margin-bottom: 8px;
+}
+
+.action-section {
+  margin: 32px 0;
+  padding: 24px;
+  background: #f6f8fb;
+  border-radius: 8px;
+}
+
+.tips-section {
+  background: #fafafa;
+  padding: 24px;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.tips-section h4 {
+  margin-bottom: 16px;
+}
+
+.tips-list {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.tips-list li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .confirmation-card .ant-card-body {
+    padding: 24px 16px;
+  }
+
+  .success-check {
+    font-size: 60px;
+  }
+
+  .limit-amount {
+    font-size: 20px;
+  }
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .confirmation-page {
+    background: white;
+  }
+
+  .confirmation-content {
+    padding: 0;
+  }
+
+  .confirmation-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .success-check {
+    display: none;
+  }
+
+  .action-section {
+    display: none;
+  }
+}

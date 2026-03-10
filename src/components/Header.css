@@ -1,0 +1,77 @@
+.header-container {
+  background-color: white;
+  border-bottom: 2px solid #f0f0f0;
+  padding: 0 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #1890ff;
+}
+
+.logo-icon {
+  font-size: 24px;
+}
+
+.logo-text {
+  margin: 0;
+  color: #333;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.phone-number {
+  color: #666;
+  font-size: 14px;
+}
+
+.user-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 16px;
+  }
+
+  .user-info {
+    display: none;
+  }
+
+  .user-menu {
+    display: block;
+  }
+
+  .header-actions {
+    gap: 16px;
+  }
+}

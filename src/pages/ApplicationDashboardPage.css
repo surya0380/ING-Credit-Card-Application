@@ -1,0 +1,99 @@
+.application-dashboard {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.dashboard-content {
+  padding: 24px;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+
+.welcome-card .ant-card-body {
+  padding: 32px 24px;
+}
+
+.welcome-title {
+  color: white;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.welcome-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 8px 0 0;
+  font-size: 16px;
+}
+
+.status-card {
+  background: white;
+  border-radius: 8px;
+}
+
+.details-card {
+  background: white;
+  border-radius: 8px;
+}
+
+.detail-item {
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.detail-item h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.detail-item p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.completed {
+  color: #52c41a;
+}
+
+.eligible {
+  color: #52c41a;
+}
+
+.not-eligible {
+  color: #f5222d;
+}
+
+.action-buttons {
+  padding: 16px 0;
+  text-align: center;
+}
+
+.stepper-container {
+  padding: 16px 0;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 16px;
+  }
+
+  .welcome-title {
+    font-size: 20px;
+  }
+
+  .welcome-subtitle {
+    font-size: 14px;
+  }
+}

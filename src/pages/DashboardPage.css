@@ -1,0 +1,155 @@
+.dashboard-page {
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+.dashboard-content {
+    padding: 24px;
+}
+
+.dashboard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.welcome-section {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    margin-bottom: 8px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.welcome-section p {
+    color: #666;
+    font-size: 14px;
+}
+
+.applications-card {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.applications-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.application-item {
+    padding: 16px 0;
+}
+
+.app-info {
+    padding: 8px 0;
+}
+
+.app-id {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.app-date {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    color: #999;
+}
+
+.status-section {
+    display: flex;
+    gap: 8px;
+}
+
+.progress-section {
+    padding: 8px 0;
+}
+
+.progress-label {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.progress-bar-container {
+    height: 8px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #1890ff, #52c41a);
+    transition: width 0.3s ease;
+}
+
+.progress-percentage {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+.application-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    margin: 16px 0;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detail-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-value {
+    font-size: 14px;
+    color: #333;
+}
+
+.no-applications-card {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.empty-state {
+    padding: 60px 24px;
+    text-align: center;
+}
+
+.empty-state h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.empty-state p {
+    margin-bottom: 24px;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .dashboard-content {
+        padding: 16px;
+    }
+
+    .welcome-section h1 {
+        font-size: 22px;
+    }
+
+    .application-details {
+        grid-template-columns: 1fr;
+    }
+}

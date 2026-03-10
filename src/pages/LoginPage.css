@@ -1,0 +1,113 @@
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.login-container {
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.login-info {
+  color: white;
+}
+
+.info-content {
+  text-align: left;
+}
+
+.login-info h2 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.login-info .ant-typography {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.features-list {
+  margin-top: 32px;
+}
+
+.feature-item {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.feature-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+}
+
+.demo-numbers {
+  margin-top: 48px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.demo-title {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.number-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.number-item {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  color: white;
+}
+
+.login-form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.login-card .ant-card-body {
+  padding: 32px 24px;
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    padding: 16px;
+  }
+
+  .login-info {
+    display: none;
+  }
+
+  .login-card .ant-card-body {
+    padding: 24px 16px;
+  }
+}
+
